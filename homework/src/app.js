@@ -14,7 +14,6 @@
 
 
   const str = 'dlroW olleH';
-  const reverse = str 
   console.log(Array.from(str).reverse().join(''));
 
   /* ARRAYS */
@@ -33,7 +32,7 @@
 
   console.log(favoriteAnimals);
 
-  favoriteAnimals.splice(3,1,);
+  favoriteAnimals.splice(3,1);
 
   // ["blowfish", "horse", "capricorn", "turtle"]
 
@@ -67,8 +66,8 @@
 
   console.log(o1 == o2);  // false
   console.log(o2 == o3);  // true
-  console.log(o3 == 01);  // false
-  console.log(o2 == 01);  // false
+  console.log(o3 == o1);  // false
+  console.log(o2 == o1);  // false
 
   // when we change o1 whit o3
   /*
@@ -81,8 +80,8 @@
 
   console.log(o1 == o2);  // true
   console.log(o2 == o3);  // false
-  console.log(o3 == 01);  // false
-  console.log(o2 == 01);  // false
+  console.log(o3 == o1);  // false
+  console.log(o2 == o1);  // false
 
   // when we change o2 whit o3, giving syntax error
 
@@ -169,22 +168,21 @@ console.log("Remaining is after 23 divide 4: " + c )
 
 /* 10.1 */
 // you can store multiple types value in an array. 
-let arr = [1 , 2 ];
+let arr = [1, 2];
 arr.push("cars");
 arr.push(true);
 arr.push(undefined);
 console.log(arr);
 
 /* 10.2 & 10.3*/
-//you can't compare infinities.
-// both of them are undefined. undefined === undefined ==> true
+//you can compare infinities.
+// both of them are Infinity. Infinity === Infinity ==> true
 let q = 6/0;
 let r = 10/0;
 
-if(q === r ){
+if (q === r ) {
     console.log(true);
-}
-else{
+} else {
     console.log(false);
 }
  
